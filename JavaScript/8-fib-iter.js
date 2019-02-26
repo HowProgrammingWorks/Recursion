@@ -5,13 +5,12 @@ const fibonacci1 = n => {
   return fibonacci1(n - 1) + fibonacci1(n - 2);
 };
 
-console.log(fibonacci1(10));
+console.log(fibonacci1(14));
 
 const fibonacci2 = n => {
   let a = 1;
   let b = 0;
   let c = 0;
-  let counter = n;
   while (n > 0) {
     c = a + b;
     b = a;
@@ -21,4 +20,4 @@ const fibonacci2 = n => {
   return b;
 };
 
-console.log(fibonacci2(10));
+console.log(fibonacci2(14));
