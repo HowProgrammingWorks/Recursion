@@ -1,6 +1,6 @@
 'use strict';
 
-const getMaxCallStackSize = i => {
+const getMaxCallStackSize = (i) => {
   try {
     return getMaxCallStackSize(++i);
   } catch (e) {

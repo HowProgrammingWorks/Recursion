@@ -10,8 +10,8 @@ console.log(add(3));
 const tail = (n, acc = 0) => {
   while (true) {
     if (n === 0) return acc;
-    acc = acc + n;
-    n = n - 1;
+    acc += n;
+    n -= 1;
   }
 };
 
