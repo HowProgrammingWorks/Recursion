@@ -3,7 +3,7 @@
 const getMaxCallStackSize = (i) => {
   try {
     return getMaxCallStackSize(++i);
-  } catch (e) {
+  } catch {
     return i;
   }
 };
