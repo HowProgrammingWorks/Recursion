@@ -4,7 +4,7 @@
 ```js
 const arr = [1, [2, 3, [4, [5]]], 6, [33]];
 
-showAllElementOfArray([1, 2, [3, 4], 5, 6]);
+showAllElementOfArray(arr);
 ```
 
 Результат:
