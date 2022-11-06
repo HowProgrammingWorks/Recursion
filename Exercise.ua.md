@@ -21,7 +21,7 @@ showAllElementOfArray(arr);
 2. Реалізуйте функцію `powLoop(base, power)`, яка працює ідентично функції `pow(base, power)`:
 ```js
 const pow = (base, power) => {
-  if(power === 0) return 1;
+  if (power === 0) return 1;
   return pow(base, power - 1) * base;
 }
 ```
