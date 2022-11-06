@@ -1,9 +1,9 @@
 'use strict';
 
-const powLoop = (base, power) => {
-  let res = 1;
+const pow = (base, power) => {
+  let result = 1;
   for (let i = 0; i < power; i++) {
-    res *= base;
+    result *= base;
   }
-  return res;
+  return result;
 };

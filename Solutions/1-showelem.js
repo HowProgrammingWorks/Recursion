@@ -1,12 +1,14 @@
 'use strict';
 
-const arr = [1, [2, 3, [4, [5]]], 6, [33]];
-
-const showAllElementOfArray = (arr) => {
-  for (const elem of arr) {
-    if (Array.isArray(elem)) showAllElementOfArray(elem);
-    else console.log(elem);
+const deepSum = (array) => {
+  let sum = 0;
+  for (const element of array) {
+    if (typeof element === 'number') sum += element;
+    if (Array.isArray(element)) sum += deepSum(element);
   }
+  return sum;
 };
 
-showAllElementOfArray(arr);
+const numbers = [1, [2, 3, [4, [5]]], 6, [33]];
+const sum = deepSum(numbers);
+console.log(sum);
