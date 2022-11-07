@@ -1,0 +1,19 @@
+({
+  name: 'deepSum',
+  length: [150, 230],
+  cases: [
+    [[1, 2, 3], 6],
+    [[0], 0],
+    [[1, -1, 1], 1],
+    [[10, -1, -1, -1], 7],
+    [[1, [2, 3, [4, [5]]], 6, [33]], 54],
+  ],
+  test(deepSum) {
+    const src = deepSum.toString();
+    const numbers = [1, 'string', [12, 3]];
+    const sum = deepSum(numbers);
+    if (isNaN(sum)) throw new Error('Do not add string');
+    if (!src.includes('deepSum(')) throw new Error('Use recursion');
+    if (!src.includes('return')) throw new Error('Use return');
+   }
+})
