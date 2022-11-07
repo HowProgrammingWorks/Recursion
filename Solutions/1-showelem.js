@@ -9,6 +9,4 @@ const deepSum = (array) => {
   return sum;
 };
 
-const numbers = [1, [2, 3, [4, [5]]], 6, [33]];
-const sum = deepSum(numbers);
-console.log(sum);
+module.exports = { deepSum };

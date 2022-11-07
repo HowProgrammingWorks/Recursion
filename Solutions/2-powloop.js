@@ -7,3 +7,5 @@ const pow = (base, power) => {
   }
   return result;
 };
+
+module.exports = { pow };
