@@ -1,0 +1,15 @@
+({
+  name: 'pow',
+  length: [110, 140],
+  cases: [
+    [2, 1, 2],
+    [2, 2, 4],
+    [2, 3, 8],
+    [2, 10, 1024]
+  ],
+  test(pow) {
+    const src = pow.toString();
+    if (src.includes('pow(')) throw new Error('Do not use recursion');
+    if (!src.includes('return')) throw new Error('Use return');
+   }
+})
